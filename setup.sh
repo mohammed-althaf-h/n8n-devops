@@ -53,13 +53,6 @@ EOF
 echo "[+] Creating secure Caddyfile with rate-limiting + headers"
 cat > Caddyfile <<EOF
 ${DOMAIN} {
-  rate_limit {
-    zone login {
-      key {remote_ip}
-      events 5
-      window 1m
-    }
-  }
   header {
     X-Content-Type-Options nosniff
     X-Frame-Options DENY
