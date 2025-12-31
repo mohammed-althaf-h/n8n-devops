@@ -115,11 +115,11 @@ sudo ufw allow 80
 sudo ufw allow 443
 sudo ufw --force enable
 
-docker compose up -d
+sudo docker compose up -d
 
 cat > restart-n8n.sh <<EOF
 #!/bin/bash
-docker restart n8n-n8n-1
+sudo docker restart n8n-n8n-1
 EOF
 chmod +x restart-n8n.sh
 
