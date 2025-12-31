@@ -97,7 +97,7 @@ sudo ufw allow 443
 sudo ufw --force enable
 
 echo "[+] Starting n8n stack"
-docker compose up -d
+sudo docker compose up -d
 
 echo "=========================================="
 echo "✅ n8n deployed successfully!"
